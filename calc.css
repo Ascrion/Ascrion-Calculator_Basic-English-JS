@@ -1,0 +1,107 @@
+/* calc.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.master {
+    background-color: #2c3e50;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#display {
+    background-color: #34495e;
+    color: #ecf0f1;
+    font-size: 1.5em;
+    padding: 20px;
+    text-align: right;
+    border-bottom: 1px solid #1abc9c;
+    height: 1.5em;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.input {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    padding: 20px;
+    background-color: #ecf0f1;
+}
+
+button {
+    background-color: #3498db;
+    color: #fff;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 5px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+button:active {
+    background-color: #1abc9c;
+}
+
+.calc_controls {
+    grid-column: span 5;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.calc_controls button {
+    width: 48%;
+    background-color: #e74c3c;
+}
+
+.calc_controls button:hover {
+    background-color: #c0392b;
+}
+
+#cc_separator {
+    display: flex;
+    gap: 10px;
+}
+
+.scientific_operations {
+    grid-column: span 5;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.scientific_operations button {
+    background-color: #8e44ad;
+}
+
+.scientific_operations button:hover {
+    background-color: #71368a;
+}
+
+.numpad {
+    display: contents;
+}
+
+.numpad button {
+    width: 100%;
+}
+
+.numpad button:nth-child(4n+1) {
+    background-color: #e67e22;
+}
+
+.numpad button:nth-child(4n+1):hover {
+    background-color: #d35400;
+}
